@@ -19,4 +19,3 @@ let isAccess;
 
 let VerifiedUser = isVerifiedUser && (hasSpecialPermission || hasTemporaryPass);
 isAccess = isAdmin || VerifiedUser;
-isAccess ? alert("Есть доступ") : alert("Нет доступа");
