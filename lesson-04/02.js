@@ -28,13 +28,14 @@ function includesElement(array, element) {
 // includesElement([1, 2, 3], 2);
 
 function findUniqueElements(array) {
-  let newArray = [array[0]];
-  for (let i = 1; i < array.length; i++) {
+  let newArray = [];
+  for (let i = 0; i < array.length; i++) {
     let isRepeat = includesElement(newArray, array[i]);
     if (!isRepeat) {
       newArray.push(array[i]);
     }
   }
+  console.log(newArray);
   return newArray;
 }
 
