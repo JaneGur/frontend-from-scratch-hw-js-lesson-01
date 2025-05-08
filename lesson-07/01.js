@@ -19,4 +19,3 @@ function capitalizeWords(str) {
   return newString.trim();
 }
 capitalizeWords("hello world from javascript");
-console.log(capitalizeWords("hello world from javascript"));
