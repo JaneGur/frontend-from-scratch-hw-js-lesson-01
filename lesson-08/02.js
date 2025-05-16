@@ -38,7 +38,7 @@ startButton.addEventListener("click", () => {
     let counter = 3;
     countdownDisplay.textContent = counter;
     const intervalStart = setInterval(() => {
-      if (counter > 0) {
+      if (counter > 1) {
         counter--;
         countdownDisplay.textContent = counter;
         cancelButton.addEventListener("click", () => {
