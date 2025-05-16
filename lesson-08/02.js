@@ -36,11 +36,11 @@ startButton.addEventListener("click", () => {
   if (!isTimerStarted) {
     isTimerStarted = true;
     let counter = 3;
+    countdownDisplay.textContent = counter;
     const intervalStart = setInterval(() => {
-      countdownDisplay.textContent = counter;
       if (counter > 0) {
-        countdownDisplay.textContent = counter;
         counter--;
+        countdownDisplay.textContent = counter;
         cancelButton.addEventListener("click", () => {
           clearInterval(intervalStart);
           countdownDisplay.textContent = "Отменено";
